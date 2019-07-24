@@ -1,9 +1,7 @@
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
-
 // Variables
 @import 'variables';
-
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
@@ -13,3 +11,172 @@
   object-fit: cover;
   object-position: center;
 }
+
+.blogTopCards {
+  display: flex;
+  flex-direction: row;
+  height: 26rem;
+
+  .mainCard {
+    //background-image: url("https://i0.wp.com/demo.gretathemes.com/eightydays/wp-content/uploads/sites/7/2016/06/rob-bye-18279.jpg?resize=780%2C480&ssl=1");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    text-shadow: black 0 0 5px;
+  }
+
+  .secondaryCards {
+    display: flex;
+    flex-direction: column;
+
+    .secondaryCard {
+      //background-image: url("https://i2.wp.com/demo.gretathemes.com/eightydays/wp-content/uploads/sites/7/2016/06/samuel-zeller-111395.jpg?resize=410%2C235&ssl=1");
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 12.49rem;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: top;
+      text-shadow: black 0 0 5px;
+
+      &:first-child {
+        margin-bottom: 1rem;
+      }
+
+      .cardTitle {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  .cardInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgba(0, 0, 0, .3);
+    padding: 20px;
+    width: 90%;
+    color: #fff;
+    font-family: $card-font;
+
+    .cardCategory {
+      border: 1px solid #E8CB80;
+      padding: 0 5px 0 5px;
+      margin-bottom: 5px;
+    }
+
+    .cardTitle {
+      margin-bottom: 5px;
+      font-size: 1.7rem;
+    }
+
+    .cardDateTime {
+
+    }
+  }
+}
+
+.cards {
+  height: 100rem;
+
+  .grid {
+    height: inherit;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+
+    .card {
+      overflow: hidden;
+      .cardImage {
+        height: 40%;
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        align-items: flex-end;
+        overflow: hidden;
+        transition: all linear 0.2s;
+
+        &:hover {
+          transition: all linear 0.2s;
+          transform: scale(1.1);
+          width: 100%;
+          .transformBlock {
+            top: 25%;
+          }
+        }
+        .transformBlock {
+          transition: all linear 0.2s;
+          background-color: #fff;
+          height: 35%;
+          width: 100%;
+          right: 5%;
+          top: 20%;
+          position: relative;
+          transform: rotate(10deg);
+        }
+      }
+      .cardData {
+        background-color: #fff;
+        width: inherit;
+        height: 60%;
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        text-shadow: #E8CB80 0 0 2.5px;
+        .cardTopInfo {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          .cardCategory {
+            color: #E8CB80;
+            font-size: 1.1rem;
+            text-shadow: none;
+          }
+          .cardDateTime {
+            font-size: 0.7rem;
+            font-style: italic;
+          }
+        }
+        .cardText {
+          text-align: center;
+        }
+      }
+    }
+  }
+}
+
+/*#region Portfolio*/
+.self-photo {
+  width: 13vw;
+  height: 13vw;
+  border-radius: 100%;
+  background-position: center;
+  background-image: url("/images/self_photo.jpg");
+  background-size: cover;
+}
+
+.text-block-photo {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  .status {
+    color: red;
+  }
+}
+
+.work-exp {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5vh;
+}
+
+/*#endregion */
+

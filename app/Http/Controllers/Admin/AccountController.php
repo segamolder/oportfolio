@@ -16,4 +16,5 @@ class AccountController extends Controller
   {
       return view('admin/home');
   }
+
 }

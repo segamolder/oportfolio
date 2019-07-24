@@ -9,6 +9,8 @@
 namespace App\Http\Controllers;
 
 
+use Illuminate\Support\Facades\Auth;
+
 class AccountController extends Controller
 {
     /**
@@ -28,6 +30,9 @@ class AccountController extends Controller
      */
     public function index()
     {
-        return view('home');
+        if (Auth::user()->isAdmin == 0) {
+            return view('home');
+        } else
+            return view('admin/blogPostList');
     }
 }
