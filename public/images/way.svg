@@ -5,6 +5,14 @@
         fill: none;
       }
 
+      .cls-7:hover {
+      r: 10;
+      }
+
+      .cls-7:hover + .cls-8 {
+        r: 10;
+      }
+
       .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
         stroke: #707070;
       }

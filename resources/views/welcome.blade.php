@@ -4,7 +4,7 @@
     <div class="container">
         <div class="row">
             <div class="col-6">
-                <div class="row">
+                <div class="row mt-3">
                     <div class="col-6">
                         <div class="self-photo"></div>
                     </div>
@@ -17,12 +17,19 @@
                     </div>
                 </div>
                 <div class="row work-exp">
-                    <h1>Work experience</h1>
+                    <h1 class="mb-5 mt-5">Work experience</h1>
                     <timer></timer>
                 </div>
             </div>
             <div class="col-6">
-                <img style="height: 80vh" src="/images/way.svg" alt="">
+                {{--<img style="height: 80vh" src="/images/way.svg" alt="">--}}
+                <object
+                        style="height: 80vh"
+                        type="image/svg+xml"
+                        data="/images/way.svg">
+                    <img
+                            src="/images/way.svg">
+                </object>
             </div>
         </div>
     </div>
