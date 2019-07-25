@@ -1732,12 +1732,20 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['id'],
   name: "py-4",
   data: function data() {
     return {
+      dClick: 0,
       summernoteData: null,
       text: null,
       title: null,
@@ -1750,8 +1758,50 @@ __webpack_require__.r(__webpack_exports__);
     };
   },
   methods: {
+    deletePost: function deletePost() {
+      if (this.dClick === 0) {
+        this.dClick++;
+        $("#deletePost").html('Повторно нажмите для подтверждения');
+      } else {
+        var data = {
+          id: this.id
+        };
+        axios__WEBPACK_IMPORTED_MODULE_0___default.a.post('/admin/blog/deletePost', data, {}).then(function (response) {
+          console.log(response);
+        })["catch"](function (error) {
+          console.log(error.response);
+        });
+        document.location.href = '/admin/blog/postList';
+      }
+    },
+    validate: function validate() {
+      var result = true;
+
+      if (this.blogPost.blogPostText.length === 0) {
+        $('.input-text').css("box-shadow", "0 0 0 0.2rem rgb(255, 0, 0, 0.25)");
+        result = false;
+      } else {
+        $('.input-text').css("box-shadow", "none");
+      }
+
+      if (this.blogPost.blogPostTitle.length === 0) {
+        $('.input-title').css("box-shadow", "0 0 0 0.2rem rgb(255, 0, 0, 0.25)");
+        result = false;
+      } else {
+        $('.input-title').css("box-shadow", "none");
+      }
+
+      if (this.blogPost.blogPostCategory.length === 0) {
+        $('.input-category').css("box-shadow", "0 0 0 0.2rem rgb(255, 0, 0, 0.25)");
+        result = false;
+      } else {
+        $('.input-category').css("box-shadow", "none");
+      }
+
+      return result;
+    },
     savePost: function savePost() {
-      if (this.blogPost.blogPostText.length < 180) {
+      if (this.blogPost.blogPostText.length < 180 && this.validate()) {
         if (this.id != 0) {
           var data = {
             postData: $('#summernote').summernote('code'),
@@ -1785,7 +1835,6 @@ __webpack_require__.r(__webpack_exports__);
 
         document.location.href = '/admin/blog/postList';
       } else {
-        $('.input-text').css("border-color", "red");
         $('#testSummerNote').popover({
           container: 'body',
           trigger: 'focus'
@@ -45044,7 +45093,7 @@ var render = function() {
             expression: "blogPost.blogPostCategory"
           }
         ],
-        staticClass: "form-control input-text",
+        staticClass: "form-control input-category",
         attrs: {
           type: "text",
           placeholder: "Add category for preview",
@@ -45079,7 +45128,17 @@ var render = function() {
         },
         on: { click: _vm.savePost }
       },
-      [_vm._v("Save")]
+      [_vm._v("Save\n    ")]
+    ),
+    _vm._v(" "),
+    _c(
+      "button",
+      {
+        staticClass: "btn btn-danger mt-1",
+        attrs: { id: "deletePost" },
+        on: { click: _vm.deletePost }
+      },
+      [_vm._v("Удалить")]
     )
   ])
 }

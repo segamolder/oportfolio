@@ -12,6 +12,7 @@ use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\Models\BlogPost;
 use Illuminate\Support\Facades\Date;
+use Illuminate\Support\Facades\Log;
 use mysql_xdevapi\Exception;
 
 class BlogPostsController extends Controller
@@ -112,9 +113,9 @@ class BlogPostsController extends Controller
         $images = $dom->getElementsByTagName('img');
 
         foreach ($images as $k => $img) {
-
             $data = $img->getAttribute('src');
-            if (strpos($data, 'data')) {
+
+            if (strpos($data, 'data') !== false) {
                 list($type, $data) = explode(';', $data);
 
                 list(, $data) = explode(',', $data);
@@ -142,5 +143,17 @@ class BlogPostsController extends Controller
 
     public function GetPostById($id) {
         return view('blogPostView', ['id' => $id]);
+    }
+
+    public function DeletePost(Request $request) {
+        try {
+            $data = $request->all();
+
+            BlogPost::where('id', $data['id'])->delete();
+
+            return 'Ok';
+        } catch (\Exception $ex) {
+            Log::error('Не удалось удалить пост:', ex);
+        }
     }
 }

@@ -49,6 +49,10 @@
 
                 <!-- Right Side Of Navbar -->
                 <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('blog') }}">Блог</a>
+                    </li>
+                    <li class="nav-item"><li class="nav-link"><i style="font-size: 0.6rem" class="fas fa-circle"></i></li></li>
                     <!-- Authentication Links -->
                     @guest
                         <li class="nav-item">
@@ -66,7 +70,10 @@
                             </a>
 
                             <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item" href="#">{{ __("auth.Settings") }}</a>
+                                @if(Auth::user()->isAdmin)
+                                    <a href="{{route('account')}}" class="dropdown-item">Админ-панель</a>
+                                    <a href="{{route('logs')}}" class="dropdown-item">Логи</a>
+                                @endif
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{{ route('logout') }}"
                                    onclick="event.preventDefault();

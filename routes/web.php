@@ -14,10 +14,10 @@ use App\Models\BlogPost;
 
 Route::get('/', function () {
     return view('welcome');
-});
+})->name('welcome');
 Route::get('/blog', function () {
     return view('blog');
-});
+})->name('blog');
 Route::get('/blog/getAll', 'Admin\BlogPostsController@GetAll');
 
 Route::get('/blog/posts', function () {
@@ -38,7 +38,7 @@ Route::group(['middleware' => 'guest'], function () {
 
 Route::group(['middleware' => 'auth'], function () {
     Route::post('/logout', 'Auth\LoginController@logout')->name('logout');
-    Route::get('/my/account', 'AccountController@index')->name('account');
+    Route::get('/postlist', 'AccountController@index')->name('account');
 
     //admin
     Route::group(['middleware' => 'IsAdmin'], function () {
@@ -51,6 +51,9 @@ Route::group(['middleware' => 'auth'], function () {
         Route::get('/admin/blog/getpost/{id}', 'Admin\BlogPostsController@GetPost');
         Route::post('/admin/blog/editPost', 'Admin\BlogPostsController@EditPost');
         Route::post('/admin/blog/setActiveToggle', 'Admin\BlogPostsController@SetToggle');
+        Route::post('/admin/blog/deletePost', 'Admin\BlogPostsController@DeletePost');
+        Route::get('logs', '\Rap2hpoutre\LaravelLogViewer\LogViewerController@index')->name('logs');
+
     });
 });
 

@@ -1,6 +1,5 @@
 <template>
     <div class="all_time">
-        <!--<div>{{years}} лет, {{month}} месяцев, {{days}} дней, {{hours}} часов, {{minute}} минут, {{second}} {{secondName}}</div>-->
         <div class="timer" v-if="years != 0"><span class="number">{{years}}</span><span class="text">{{yearsName}}</span></div>
         <div class="timer"><span class="number">{{month}}</span><span class="text">{{monthName}}</span></div>
         <div class="timer"><span class="number">{{days}}</span><span class="text">{{daysName}}</span></div>
