@@ -1,5 +1,5 @@
 <template>
-    <div class="container">
+    <div style="width: 50vw" class="container">
         <h1 class="display-4">{{blogPost.blogPostTitle}}</h1>
         <p>{{blogPost.blogPostCategory}}</p>
         <p class="blockquote-footer">{{blogPost.blogPostCreatedAt}}</p>

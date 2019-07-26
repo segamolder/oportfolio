@@ -1764,7 +1764,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   name: "Timer.vue",
   data: function data() {
@@ -45639,21 +45638,25 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", { staticClass: "container" }, [
-    _c("h1", { staticClass: "display-4" }, [
-      _vm._v(_vm._s(_vm.blogPost.blogPostTitle))
-    ]),
-    _vm._v(" "),
-    _c("p", [_vm._v(_vm._s(_vm.blogPost.blogPostCategory))]),
-    _vm._v(" "),
-    _c("p", { staticClass: "blockquote-footer" }, [
-      _vm._v(_vm._s(_vm.blogPost.blogPostCreatedAt))
-    ]),
-    _vm._v(" "),
-    _c("hr", { staticClass: "my-4" }),
-    _vm._v(" "),
-    _c("div", { domProps: { innerHTML: _vm._s(_vm.blogPost.blogPostData) } })
-  ])
+  return _c(
+    "div",
+    { staticClass: "container", staticStyle: { width: "50vw" } },
+    [
+      _c("h1", { staticClass: "display-4" }, [
+        _vm._v(_vm._s(_vm.blogPost.blogPostTitle))
+      ]),
+      _vm._v(" "),
+      _c("p", [_vm._v(_vm._s(_vm.blogPost.blogPostCategory))]),
+      _vm._v(" "),
+      _c("p", { staticClass: "blockquote-footer" }, [
+        _vm._v(_vm._s(_vm.blogPost.blogPostCreatedAt))
+      ]),
+      _vm._v(" "),
+      _c("hr", { staticClass: "my-4" }),
+      _vm._v(" "),
+      _c("div", { domProps: { innerHTML: _vm._s(_vm.blogPost.blogPostData) } })
+    ]
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
