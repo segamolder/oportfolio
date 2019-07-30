@@ -19,8 +19,10 @@
     <!-- Styles -->
     <link href="{{ mix('css/admin.css') }}" rel="stylesheet">
 
-    <!-- SummerNote -->
-    <link href="http://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.12/summernote.css" rel="stylesheet">
+    <link rel="stylesheet"
+          href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/styles/default.min.css">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.8/highlight.min.js"></script>
+
 </head>
 <body>
 <div id="app">

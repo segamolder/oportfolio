@@ -1,6 +1,129 @@
-@import url('https://fonts.googleapis.com/css?family=Amatic+SC|EB+Garamond&display|Exo+2|Playfair+Display&display=swap');// Body
+@import url('https://fonts.googleapis.com/css?family=Amatic+SC|EB+Garamond&display|Exo+2|Playfair+Display|Alegreya|Caveat|Comfortaa|Cuprum|Darker+Grotesque|Indie+Flower|Lacquer|Open+Sans+Condensed:300|PT+Sans|Pacifico|Playfair+Display|Ubuntu+Condensed|Yanone+Kaffeesatz&display=swap');// Body
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
 $body-bg: #f8fafc;
+
+.ql-font span[data-label="AmaticSC"]::before {
+  font-family: 'Amatic SC', cursive;
+  //content: 'AmaticSC' !important;
+}
+
+.ql-font-AmaticSC {
+  font-family: 'Amatic SC', cursive;
+}
+
+#toolbar-container .ql-font span[data-label="EBGaramond"]::before {
+  font-family: 'EB Garamond', serif;
+}
+
+.ql-font-EBGaramond {
+  font-family: 'EB Garamond', serif;
+}
+
+#toolbar-container .ql-font span[data-label="DarkerGrotesque"]::before {
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+.ql-font-DarkerGrotesque {
+  font-family: 'Darker Grotesque', sans-serif;
+}
+
+#toolbar-container .ql-font span[data-label="PTSans"]::before {
+  font-family: 'PT Sans', sans-serif;
+}
+
+.ql-font-PTSans {
+  font-family: 'PT Sans', sans-serif;
+}
+
+#toolbar-container .ql-font span[data-label="OpenSansCondensed"]::before {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.ql-font-OpenSansCondensed {
+  font-family: 'Open Sans Condensed', sans-serif;
+}
+
+#toolbar-container .ql-font span[data-label="PlayfairDisplay"]::before {
+  font-family: 'Playfair Display', serif;
+}
+
+.ql-font-PlayfairDisplay {
+  font-family: 'Playfair Display', serif;
+}
+
+#toolbar-container .ql-font span[data-label="Lacquer"]::before {
+  font-family: 'Lacquer', sans-serif;
+}
+
+.ql-font-Lacquer {
+  font-family: 'Lacquer', sans-serif;
+}
+
+#toolbar-container .ql-font span[data-label="IndieFlower"]::before {
+  font-family: 'Indie Flower', cursive;
+}
+
+.ql-font-IndieFlower {
+  font-family: 'Indie Flower', cursive;
+}
+
+#toolbar-container .ql-font span[data-label="Pacifico"]::before {
+  font-family: 'Pacifico', cursive;
+}
+
+.ql-font-Pacifico {
+  font-family: 'Pacifico', cursive;
+}
+
+#toolbar-container .ql-font span[data-label="YanoneKaffeesatz"]::before {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.ql-font-YanoneKaffeesatz {
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+#toolbar-container .ql-font span[data-label="Comfortaa"]::before {
+  font-family: 'Comfortaa', cursive;
+}
+
+.ql-font-Comfortaa {
+  font-family: 'Comfortaa', cursive;
+}
+
+#toolbar-container .ql-font span[data-label="UbuntuCondensed"]::before {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+.ql-font-UbuntuCondensed {
+  font-family: 'Ubuntu Condensed', sans-serif;
+}
+
+#toolbar-container .ql-font span[data-label="Cuprum"]::before {
+  font-family: 'Cuprum', sans-serif;
+}
+
+.ql-font-Cuprum {
+  font-family: 'Cuprum', sans-serif;
+}
+
+#toolbar-container .ql-font span[data-label="Caveat"]::before {
+  font-family: 'Caveat', cursive;
+}
+
+.ql-font-Caveat {
+  font-family: 'Caveat', cursive;
+}
+
+#toolbar-container .ql-font span[data-label="Alegreya"]::before {
+  font-family: 'Alegreya', serif;
+}
+
+.ql-font-Alegreya {
+  font-family: 'Alegreya', serif;
+}
+
+
 
 // Typography
 $font-family-amatic-sc: 'Amatic SC', cursive;

@@ -10,13 +10,4 @@ const app = new Vue({
     el: '.py-4',
 });
 
-$(document).ready(function() {
-    $('#summernote').summernote({
-        height: 300,
-        popover: {
-            image: [],
-            link: [],
-            air: []
-        }
-    });
-});
+
