@@ -62441,7 +62441,7 @@ var render = function() {
       ])
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "row mr-0" }, [
       _c("div", { staticClass: "cards col-md-8 px-0 mt-4" }, [
         _c("div", { staticClass: "grid" }, [
           _c("div", { staticClass: "card" }, [
