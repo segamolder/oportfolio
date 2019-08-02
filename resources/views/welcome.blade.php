@@ -3,12 +3,12 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-md-auto">
                 <div class="row mt-3">
-                    <div class="col-6">
+                    <div class="col-md-auto">
                         <div class="self-photo"></div>
                     </div>
-                    <div class="col-6 text-block-photo">
+                    <div class="col-md-auto mt-2 text-block-photo">
                         <p class="mb-0">My name is Sergey.</p>
                         <p class="mb-0">I am Junior Developer.</p>
                         <p class="mb-0">Work status: <span class="status">working <i class="fas fa-circle"></i></span>
@@ -21,9 +21,10 @@
                     <timer></timer>
                 </div>
             </div>
-            <div class="col-6">
+            <div class="col-6-auto">
                 {{--<img style="height: 80vh" src="/images/way.svg" alt="">--}}
                 <object
+                        class="way"
                         style="height: 80vh"
                         type="image/svg+xml"
                         data="/images/way.svg">
