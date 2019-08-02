@@ -33,7 +33,7 @@
         </div>
         <!--#endregion-->
         <!--#region Основные карточки-->
-        <div class="row">
+        <div class="row mr-0">
             <div class="cards col-md-8 px-0 mt-4">
                 <div class="grid">
                     <div class="card">

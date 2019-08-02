@@ -13345,6 +13345,7 @@ a.text-dark:focus {
 
 .cards .grid .card .cardData .cardText {
   text-align: center;
+  width: 90%;
 }
 
 /*#region Portfolio*/
@@ -13389,7 +13390,7 @@ a.text-dark:focus {
   .cards .grid {
     height: inherit;
     display: grid;
-    grid-template-rows: repeat(6, 1fr);
+    grid-template-rows: repeat(6, 55vh);
     grid-template-columns: 1fr;
     grid-gap: 1rem;
   }
