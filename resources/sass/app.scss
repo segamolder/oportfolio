@@ -146,6 +146,7 @@
         }
         .cardText {
           text-align: center;
+          width: 90%;
         }
       }
     }
@@ -183,5 +184,17 @@
 @media (max-width: 768px) {
   .way {
     width: 100%;
+  }
+
+  .blogTopCards {
+    display: none;
+  }
+
+  .cards .grid {
+    height: inherit;
+    display: grid;
+    grid-template-rows: repeat(6, 55vh);
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
   }
 }

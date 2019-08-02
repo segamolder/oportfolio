@@ -62352,7 +62352,7 @@ var render = function() {
       _c(
         "div",
         {
-          staticClass: "col-8 mainCard",
+          staticClass: "col-md-8 mainCard",
           staticStyle: { cursor: "pointer" },
           style: { backgroundImage: "url(" + _vm.mainPosts.data[0].img + ")" },
           on: {
@@ -62378,7 +62378,7 @@ var render = function() {
         ]
       ),
       _vm._v(" "),
-      _c("div", { staticClass: "col-4 secondaryCards" }, [
+      _c("div", { staticClass: "col-md-4 secondaryCards" }, [
         _c(
           "div",
           {
@@ -62442,7 +62442,7 @@ var render = function() {
     ]),
     _vm._v(" "),
     _c("div", { staticClass: "row" }, [
-      _c("div", { staticClass: "cards col-8 px-0 mt-4" }, [
+      _c("div", { staticClass: "cards col-md-8 px-0 mt-4" }, [
         _c("div", { staticClass: "grid" }, [
           _c("div", { staticClass: "card" }, [
             _c(

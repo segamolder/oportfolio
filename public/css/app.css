@@ -13381,5 +13381,17 @@ a.text-dark:focus {
   .way {
     width: 100%;
   }
+
+  .blogTopCards {
+    display: none;
+  }
+
+  .cards .grid {
+    height: inherit;
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 1rem;
+  }
 }
 

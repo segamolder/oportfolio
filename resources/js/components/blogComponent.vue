@@ -4,7 +4,7 @@
         <div class="row blogTopCards">
             <!--#region Главная карточка-->
             <!--TODO вынести в стили-->
-            <div class="col-8 mainCard" style="cursor: pointer" @click="openPost(mainPosts.data[0].id)" v-bind:style="{ backgroundImage: 'url(' + mainPosts.data[0].img + ')' }">
+            <div class="col-md-8 mainCard" style="cursor: pointer" @click="openPost(mainPosts.data[0].id)" v-bind:style="{ backgroundImage: 'url(' + mainPosts.data[0].img + ')' }">
                 <div class="cardInfo">
                     <div class="cardCategory">{{mainPosts.data[0].category}}</div>
                     <div class="cardTitle">{{mainPosts.data[0].title}}</div>
@@ -13,7 +13,7 @@
             </div>
             <!--#endregion-->
             <!--#region Второстепенные карточки-->
-            <div class="col-4 secondaryCards">
+            <div class="col-md-4 secondaryCards">
                 <div class="secondaryCard" @click="openPost(mainPosts.data[1].id)" v-bind:style="{ backgroundImage: 'url(' + mainPosts.data[1].img + ')' }">
                     <div class="cardInfo">
                         <div class="cardCategory">{{mainPosts.data[1].category}}</div>
@@ -34,7 +34,7 @@
         <!--#endregion-->
         <!--#region Основные карточки-->
         <div class="row">
-            <div class="cards col-8 px-0 mt-4">
+            <div class="cards col-md-8 px-0 mt-4">
                 <div class="grid">
                     <div class="card">
                         <div class="cardImage" v-bind:style="{ backgroundImage: 'url(' + mainPosts.data[0].img + ')' }">
