@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Amatic+SC|EB+Garamond&display|Exo+2|Playfair+Display|Alegreya|Caveat|Comfortaa|Cuprum|Darker+Grotesque|Indie+Flower|Lacquer|Open+Sans+Condensed:300|PT+Sans|Pacifico|Playfair+Display|Ubuntu+Condensed|Yanone+Kaffeesatz&display=swap');// Body
 @import '~@fortawesome/fontawesome-free/css/all.min.css';
+@import '~quill/dist/quill.core.css';
+@import '~quill/dist/quill.snow.css';
+@import '~quill/dist/quill.bubble.css';
+//@import "~highlight.js/styles/monokai-sublime.css";
+
+@import '~highlight.js/styles/railscasts.css';
 $body-bg: #f8fafc;
 
 .ql-font span[data-label="AmaticSC"]::before {
@@ -19,12 +25,12 @@ $body-bg: #f8fafc;
   font-family: 'EB Garamond', serif;
 }
 
-#toolbar-container .ql-font span[data-label="DarkerGrotesque"]::before {
-  font-family: 'Darker Grotesque', sans-serif;
+#toolbar-container .ql-font span[data-label="Ubuntu"]::before {
+  font-family: 'Ubuntu', serif;
 }
 
-.ql-font-DarkerGrotesque {
-  font-family: 'Darker Grotesque', sans-serif;
+.ql-font-Ubuntu {
+  font-family: 'Ubuntu', serif;
 }
 
 #toolbar-container .ql-font span[data-label="PTSans"]::before {

@@ -36,7 +36,7 @@
               <select class="ql-font">
                   <option value="AmaticSC">AmaticSC</option>
                   <option value="EBGaramond">EBGaramond</option>
-                  <option value="DarkerGrotesque">DarkerGrotesque</option>
+                  <option value="Ubuntu">Ubuntu</option>
                   <option value="PTSans">PTSans</option>
                   <option value="OpenSansCondensed">OpenSansCondensed</option>
                   <option value="PlayfairDisplay">PlayfairDisplay</option>
@@ -118,7 +118,7 @@
     import 'highlight.js/styles/monokai-sublime.css'
 
     var Font = Quill.import("formats/font");
-    Font.whitelist = ["EBGaramond", "AmaticSC", "DarkerGrotesque", "PTSans", "OpenSansCondensed", "PlayfairDisplay", "Lacquer", "IndieFlower", "Pacifico", "YanoneKaffeesatz", "Comfortaa", "UbuntuCondensed", "Cuprum", "Caveat", "Alegreya"];
+    Font.whitelist = ["EBGaramond", "AmaticSC", "Ubuntu", "PTSans", "OpenSansCondensed", "PlayfairDisplay", "Lacquer", "IndieFlower", "Pacifico", "YanoneKaffeesatz", "Comfortaa", "UbuntuCondensed", "Cuprum", "Caveat", "Alegreya"];
     Quill.register(Font, true);
     export default {
         props: ['id'],

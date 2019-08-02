@@ -1828,7 +1828,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 var Font = vue_quill_editor__WEBPACK_IMPORTED_MODULE_3__["Quill"]["import"]("formats/font");
-Font.whitelist = ["EBGaramond", "AmaticSC", "DarkerGrotesque", "PTSans", "OpenSansCondensed", "PlayfairDisplay", "Lacquer", "IndieFlower", "Pacifico", "YanoneKaffeesatz", "Comfortaa", "UbuntuCondensed", "Cuprum", "Caveat", "Alegreya"];
+Font.whitelist = ["EBGaramond", "AmaticSC", "Ubuntu", "PTSans", "OpenSansCondensed", "PlayfairDisplay", "Lacquer", "IndieFlower", "Pacifico", "YanoneKaffeesatz", "Comfortaa", "UbuntuCondensed", "Cuprum", "Caveat", "Alegreya"];
 vue_quill_editor__WEBPACK_IMPORTED_MODULE_3__["Quill"].register(Font, true);
 /* harmony default export */ __webpack_exports__["default"] = ({
   props: ['id'],
@@ -8491,7 +8491,7 @@ exports.push([module.i, "/*\n\nMonokai Sublime style. Derived from Monokai by no
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/quill/dist/quill.bubble.css":
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/quill/dist/quill.bubble.css?3926":
 /*!**********************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/quill/dist/quill.bubble.css ***!
   \**********************************************************************************************************************************/
@@ -8510,7 +8510,7 @@ exports.push([module.i, "/*!\n * Quill Editor v1.3.6\n * https://quilljs.com/\n 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/quill/dist/quill.core.css":
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/quill/dist/quill.core.css?3fb4":
 /*!********************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/quill/dist/quill.core.css ***!
   \********************************************************************************************************************************/
@@ -8529,7 +8529,7 @@ exports.push([module.i, "/*!\n * Quill Editor v1.3.6\n * https://quilljs.com/\n 
 
 /***/ }),
 
-/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/quill/dist/quill.snow.css":
+/***/ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/quill/dist/quill.snow.css?0f66":
 /*!********************************************************************************************************************************!*\
   !*** ./node_modules/css-loader??ref--7-1!./node_modules/postcss-loader/src??ref--7-2!./node_modules/quill/dist/quill.snow.css ***!
   \********************************************************************************************************************************/
@@ -63706,7 +63706,7 @@ process.umask = function() { return 0; };
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../css-loader??ref--7-1!../../postcss-loader/src??ref--7-2!./quill.bubble.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/quill/dist/quill.bubble.css");
+var content = __webpack_require__(/*! !../../css-loader??ref--7-1!../../postcss-loader/src??ref--7-2!./quill.bubble.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/quill/dist/quill.bubble.css?3926");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -63736,7 +63736,7 @@ if(false) {}
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../css-loader??ref--7-1!../../postcss-loader/src??ref--7-2!./quill.core.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/quill/dist/quill.core.css");
+var content = __webpack_require__(/*! !../../css-loader??ref--7-1!../../postcss-loader/src??ref--7-2!./quill.core.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/quill/dist/quill.core.css?3fb4");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -75261,7 +75261,7 @@ module.exports = __webpack_require__(63);
 /***/ (function(module, exports, __webpack_require__) {
 
 
-var content = __webpack_require__(/*! !../../css-loader??ref--7-1!../../postcss-loader/src??ref--7-2!./quill.snow.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/quill/dist/quill.snow.css");
+var content = __webpack_require__(/*! !../../css-loader??ref--7-1!../../postcss-loader/src??ref--7-2!./quill.snow.css */ "./node_modules/css-loader/index.js?!./node_modules/postcss-loader/src/index.js?!./node_modules/quill/dist/quill.snow.css?0f66");
 
 if(typeof content === 'string') content = [[module.i, content, '']];
 
@@ -76307,9 +76307,7 @@ var staticRenderFns = [
             _vm._v("EBGaramond")
           ]),
           _vm._v(" "),
-          _c("option", { attrs: { value: "DarkerGrotesque" } }, [
-            _vm._v("DarkerGrotesque")
-          ]),
+          _c("option", { attrs: { value: "Ubuntu" } }, [_vm._v("Ubuntu")]),
           _vm._v(" "),
           _c("option", { attrs: { value: "PTSans" } }, [_vm._v("PTSans")]),
           _vm._v(" "),

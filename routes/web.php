@@ -25,7 +25,8 @@ Route::get('/blog/posts', function () {
 });
 
 Route::get('/blog/post/{id}', 'Admin\BlogPostsController@GetPostById');
-//Auth::routes();
+Route::get('/admin/blog/getpost/{id}', 'Admin\BlogPostsController@GetPost');
+
 
 //Route::get('/home', 'HomeController@index')->name('home');
 
@@ -48,7 +49,6 @@ Route::group(['middleware' => 'auth'], function () {
             return view('admin/blogPostList');
         })->name('postList');
         Route::get('/admin/blog/editPostView/{id}', 'Admin\BlogPostsController@EditPostView');
-        Route::get('/admin/blog/getpost/{id}', 'Admin\BlogPostsController@GetPost');
         Route::post('/admin/blog/editPost', 'Admin\BlogPostsController@EditPost');
         Route::post('/admin/blog/setActiveToggle', 'Admin\BlogPostsController@SetToggle');
         Route::post('/admin/blog/deletePost', 'Admin\BlogPostsController@DeletePost');

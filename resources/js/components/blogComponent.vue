@@ -3,7 +3,8 @@
         <!--#region Верхние карточки блога-->
         <div class="row blogTopCards">
             <!--#region Главная карточка-->
-            <div class="col-8 mainCard" v-bind:style="{ backgroundImage: 'url(' + mainPosts.data[0].img + ')' }">
+            <!--TODO вынести в стили-->
+            <div class="col-8 mainCard" style="cursor: pointer" @click="openPost(mainPosts.data[0].id)" v-bind:style="{ backgroundImage: 'url(' + mainPosts.data[0].img + ')' }">
                 <div class="cardInfo">
                     <div class="cardCategory">{{mainPosts.data[0].category}}</div>
                     <div class="cardTitle">{{mainPosts.data[0].title}}</div>
@@ -13,14 +14,14 @@
             <!--#endregion-->
             <!--#region Второстепенные карточки-->
             <div class="col-4 secondaryCards">
-                <div class="secondaryCard" v-bind:style="{ backgroundImage: 'url(' + mainPosts.data[1].img + ')' }">
+                <div class="secondaryCard" @click="openPost(mainPosts.data[1].id)" v-bind:style="{ backgroundImage: 'url(' + mainPosts.data[1].img + ')' }">
                     <div class="cardInfo">
                         <div class="cardCategory">{{mainPosts.data[1].category}}</div>
                         <div class="cardTitle">{{mainPosts.data[1].title}}</div>
                         <div class="cardDateTime">{{mainPosts.data[1].created_at}}</div>
                     </div>
                 </div>
-                <div class="secondaryCard" v-bind:style="{ backgroundImage: 'url(' + mainPosts.data[2].img + ')' }">
+                <div class="secondaryCard" @click="openPost(mainPosts.data[2].id)" v-bind:style="{ backgroundImage: 'url(' + mainPosts.data[2].img + ')' }">
                     <div class="cardInfo">
                         <div class="cardCategory">{{mainPosts.data[2].category}}</div>
                         <div class="cardTitle">{{mainPosts.data[2].title}}</div>
@@ -82,6 +83,9 @@
                         // handle error
                         console.log(error);
                     })
+            },
+            openPost(id) {
+                document.location.href = "/blog/post/"+id;
             }
         },
         created() {
