@@ -62319,7 +62319,7 @@ var render = function() {
       _c("span", { staticClass: "text" }, [_vm._v(_vm._s(_vm.minuteName))])
     ]),
     _vm._v(" "),
-    _c("div", { staticClass: "timer" }, [
+    _c("div", { staticClass: "timer", staticStyle: { width: "75px" } }, [
       _c("span", { staticClass: "number" }, [_vm._v(_vm._s(_vm.second))]),
       _c("span", { staticClass: "text" }, [_vm._v(_vm._s(_vm.secondName))])
     ])
@@ -62450,7 +62450,7 @@ var render = function() {
               {
                 staticClass: "cardImage",
                 style: {
-                  backgroundImage: "url(" + _vm.mainPosts.data[0].img + ")"
+                  backgroundImage: "url(" + _vm.mainPosts.data[2].img + ")"
                 }
               },
               [_c("div", { staticClass: "transformBlock" })]
@@ -62459,42 +62459,37 @@ var render = function() {
             _c("div", { staticClass: "cardData" }, [
               _c("div", { staticClass: "cardTopInfo" }, [
                 _c("div", { staticClass: "cardCategory mb-1" }, [
-                  _vm._v(_vm._s(_vm.mainPosts.data[0].category))
+                  _vm._v(_vm._s(_vm.mainPosts.data[2].category))
                 ]),
                 _vm._v(" "),
                 _c("h1", { staticClass: "cardTitle mb-1" }, [
-                  _vm._v(_vm._s(_vm.mainPosts.data[0].title))
+                  _vm._v(_vm._s(_vm.mainPosts.data[2].title))
                 ]),
                 _vm._v(" "),
                 _c("div", { staticClass: "cardDateTime" }, [
-                  _vm._v(_vm._s(_vm.mainPosts.data[0].created_at))
+                  _vm._v(_vm._s(_vm.mainPosts.data[2].created_at))
                 ])
               ]),
               _vm._v(" "),
               _c("div", { staticClass: "cardText" }, [
-                _vm._v(_vm._s(_vm.mainPosts.data[0].text))
+                _vm._v(_vm._s(_vm.mainPosts.data[2].text))
               ]),
               _vm._v(" "),
               _c(
                 "button",
                 {
                   staticClass: "btn btn-outline-dark",
-                  attrs: { type: "button" }
+                  attrs: { type: "button" },
+                  on: {
+                    click: function($event) {
+                      return _vm.openPost(_vm.mainPosts.data[2].id)
+                    }
+                  }
                 },
                 [_vm._v("Читать полностью")]
               )
             ])
-          ]),
-          _vm._v(" "),
-          _c("div", { staticClass: "card" }),
-          _vm._v(" "),
-          _c("div", { staticClass: "card" }),
-          _vm._v(" "),
-          _c("div", { staticClass: "card" }),
-          _vm._v(" "),
-          _c("div", { staticClass: "card" }),
-          _vm._v(" "),
-          _c("div", { staticClass: "card" })
+          ])
         ])
       ])
     ])

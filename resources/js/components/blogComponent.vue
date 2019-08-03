@@ -37,24 +37,24 @@
             <div class="cards col-md-8 px-0 mt-4">
                 <div class="grid">
                     <div class="card">
-                        <div class="cardImage" v-bind:style="{ backgroundImage: 'url(' + mainPosts.data[0].img + ')' }">
+                        <div class="cardImage" v-bind:style="{ backgroundImage: 'url(' + mainPosts.data[2].img + ')' }">
                             <div class="transformBlock"></div>
                         </div>
                         <div class="cardData">
                             <div class="cardTopInfo">
-                                <div class="cardCategory mb-1">{{mainPosts.data[0].category}}</div>
-                                <h1 class="cardTitle mb-1">{{mainPosts.data[0].title}}</h1>
-                                <div class="cardDateTime">{{mainPosts.data[0].created_at}}</div>
+                                <div class="cardCategory mb-1">{{mainPosts.data[2].category}}</div>
+                                <h1 class="cardTitle mb-1">{{mainPosts.data[2].title}}</h1>
+                                <div class="cardDateTime">{{mainPosts.data[2].created_at}}</div>
                             </div>
-                            <div class="cardText">{{mainPosts.data[0].text}}</div>
-                            <button type="button" class="btn btn-outline-dark">Читать полностью</button>
+                            <div class="cardText">{{mainPosts.data[2].text}}</div>
+                            <button type="button" @click="openPost(mainPosts.data[2].id)" class="btn btn-outline-dark">Читать полностью</button>
                         </div>
                     </div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
-                    <div class="card"></div>
+                    <!--<div class="card"></div>-->
+                    <!--<div class="card"></div>-->
+                    <!--<div class="card"></div>-->
+                    <!--<div class="card"></div>-->
+                    <!--<div class="card"></div>-->
                 </div>
             </div>
         </div>

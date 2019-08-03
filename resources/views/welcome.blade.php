@@ -3,7 +3,7 @@
 @section('content')
     <div class="container">
         <div class="row">
-            <div class="col-md-auto">
+            <div class="col-md-6">
                 <div class="row mt-3">
                     <div class="col-md-auto">
                         <div class="self-photo"></div>
@@ -21,7 +21,7 @@
                     <timer></timer>
                 </div>
             </div>
-            <div class="col-6-auto">
+            <div class="col-md-6">
                 {{--<img style="height: 80vh" src="/images/way.svg" alt="">--}}
                 <object
                         class="way"

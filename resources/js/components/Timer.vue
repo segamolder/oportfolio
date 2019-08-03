@@ -5,7 +5,7 @@
         <div class="timer"><span class="number">{{days}}</span><span class="text">{{daysName}}</span></div>
         <div class="timer"><span class="number">{{hours}}</span><span class="text">{{hoursName}}</span></div>
         <div class="timer"><span class="number">{{minute}}</span><span class="text">{{minuteName}}</span></div>
-        <div class="timer"><span class="number">{{second}}</span><span class="text">{{secondName}}</span></div>
+        <div class="timer" style="width: 75px;"><span class="number">{{second}}</span><span class="text">{{secondName}}</span></div>
     </div>
 </template>
 

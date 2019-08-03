@@ -184,6 +184,7 @@
 @media (max-width: 768px) {
   .way {
     width: 100%;
+    margin-top: 2vh;
   }
 
   .blogTopCards {
@@ -196,5 +197,20 @@
     grid-template-rows: repeat(6, 55vh);
     grid-template-columns: 1fr;
     grid-gap: 1rem;
+  }
+
+  .self-photo {
+    width: 35vw;
+    height: 35vw;
+    margin-bottom: 2vh;
+  }
+
+  .text-block-photo {
+    align-items: flex-end;
+    font-size: 1.3rem;
+  }
+
+  .work-exp {
+    margin-top: 0;
   }
 }
